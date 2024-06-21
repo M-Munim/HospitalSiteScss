@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <!--  -->
   <link rel="stylesheet" href="static/style/style.css">
 </head>
@@ -205,17 +207,16 @@
     </div>
   </section>
 
-  <section id="testimonials">
+  <section id="testimonials" class="swiper mySwiper">
     <h2>What Our Patients Say</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nihil nostrum voluptatum at dignissimos ad
       possimus architecto, neque officia et fugit provident
     </p>
 
-    <div class="container">
-      <article>
+    <div class="swiper-wrapper">
+      <article class="swiper-slide">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa officiis nobis illum eligendi non
-          tempore quasi iste eveniet nam, provident autem similique accusantium qui laboriosam voluptates cupiditate
-          voluptatem officia!</p>
+          tempore quasi iste eveniet nam,</p>
 
         <div class="patient">
           <div class="avatar">
@@ -229,10 +230,9 @@
         </div>
       </article>
 
-      <article>
+      <article class="swiper-slide">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa officiis nobis illum eligendi non
-          tempore quasi iste eveniet nam, provident autem similique accusantium qui laboriosam voluptates cupiditate
-          voluptatem officia!</p>
+          tempore quasi iste eveniet nam,</p>
 
         <div class="patient">
           <div class="avatar">
@@ -246,10 +246,9 @@
         </div>
       </article>
 
-      <article>
+      <article class="swiper-slide">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa officiis nobis illum eligendi non
-          tempore quasi iste eveniet nam, provident autem similique accusantium qui laboriosam voluptates cupiditate
-          voluptatem officia!</p>
+          tempore quasi iste eveniet nam,</p>
 
         <div class="patient">
           <div class="avatar">
@@ -263,10 +262,9 @@
         </div>
       </article>
 
-      <article>
+      <article class="swiper-slide">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa officiis nobis illum eligendi non
-          tempore quasi iste eveniet nam, provident autem similique accusantium qui laboriosam voluptates cupiditate
-          voluptatem officia!</p>
+          tempore quasi iste eveniet nam,</p>
 
         <div class="patient">
           <div class="avatar">
@@ -280,10 +278,9 @@
         </div>
       </article>
 
-      <article>
+      <article class="swiper-slide">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa officiis nobis illum eligendi non
-          tempore quasi iste eveniet nam, provident autem similique accusantium qui laboriosam voluptates cupiditate
-          voluptatem officia!</p>
+          tempore quasi iste eveniet nam,</p>
 
         <div class="patient">
           <div class="avatar">
@@ -297,10 +294,9 @@
         </div>
       </article>
 
-      <article>
+      <article class="swiper-slide">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa officiis nobis illum eligendi non
-          tempore quasi iste eveniet nam, provident autem similique accusantium qui laboriosam voluptates cupiditate
-          voluptatem officia!</p>
+          tempore quasi iste eveniet nam,</p>
 
         <div class="patient">
           <div class="avatar">
@@ -314,9 +310,127 @@
         </div>
       </article>
     </div>
+    <div class="swiper-pagination"> </div>
+  </section>
+
+  <section id="appointment">
+    <div class="container">
+      <div class="info">
+        <h2>Get An Appointment</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, explicabo. Ratione provident, tenetur
+          ullam dicta aliquam placeat iure numquam ducimus?</p>
+
+        <article>
+          <div class="info_icon">
+            <!-- add icon -->
+            v
+          </div>
+
+          <div>
+            <h4>Experience Doctor</h4>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum quibusdam sequi possimus
+              reiciendis est fugiat vero nihil in rerum hic, voluptatem consequatur ullam suscipit!</small>
+          </div>
+        </article>
+
+        <article>
+          <div class="info_icon">
+            <!-- add icon -->
+            v
+          </div>
+
+          <div>
+            <h4>Advance Technology</h4>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum quibusdam sequi possimus
+              reiciendis est fugiat vero nihil in rerum hic, voluptatem consequatur ullam suscipit!</small>
+          </div>
+        </article>
+
+        <article>
+          <div class="info_icon">
+            <!-- add icon -->
+            d
+          </div>
+
+          <div>
+            <h4>Emergency Care</h4>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum quibusdam sequi possimus
+              reiciendis est fugiat vero nihil in rerum hic, voluptatem consequatur ullam suscipit!</small>
+          </div>
+        </article>
+      </div>
+
+      <form action="">
+        <div class="form_group">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Enter Your Name" name="Patient's Name" id="name" required>
+        </div>
+
+        <div class="form_group">
+          <label for="phone">Phone Number</label>
+          <input type="number" placeholder="Enter Your Phone Number" name="Phone Number" id="phone" required>
+        </div>
+
+        <div class="form_group">
+          <label for="date">Date</label>
+          <input type="date" placeholder="Choose a Date" name="Date" id="date" required>
+        </div>
+
+        <div class="form_group">
+          <label for="department">Select Department</label>
+          <select name="Department" id="department">
+            <option value="Department One">Department One</option>
+            <option value="Department Two">Department Two</option>
+            <option value="Department Three">Department Three</option>
+            <option value="Department Four">Department Four</option>
+          </select>
+        </div>
+
+        <div class="form_group">
+          <label for="doctor">Select Doctor</label>
+          <select name="Doctor" id="doctor">
+            <option value="Doctor One">Doctor One</option>
+            <option value="Doctor Two">Doctor Two</option>
+            <option value="Doctor Three">Doctor Three</option>
+            <option value="Doctor Four">Doctor Four</option>
+          </select>
+        </div>
+
+        <div class="form_group">
+          <label for="message">Additional Message</label>
+          <textarea name="Added Message" id="message" rows="6" placeholder="Add a Message" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit Request" class="btn-primary">
+      </form>
+    </div>
   </section>
 
   <script src="static/script/script.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        200: {
+          slidesPerView: 1
+        },
+        600: {
+          slidesPerView: 2
+        },
+
+        1024: {
+          slidesPerView: 3
+        },
+      }
+    })
+  </script>
 </body>
 
 </html>
